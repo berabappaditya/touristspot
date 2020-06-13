@@ -1,0 +1,174 @@
+<!DOCTYPE html>
+<html>
+<head>
+        <meta name="viewport" content="width=device-width">
+        <link rel="stylesheet" type="text/css" href="styles.css">
+        <link rel='stylesheet' href='https://use.fontawesome.com/releases/v5.7.0/css/all.css' integrity='sha384-lZN37f5QGtY3VHgisS14W3ExzMWZxybE1SJSEsQp9S+oqd12jhcu+A56Ebc1zFSJ' crossorigin='anonymous'>
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+        <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/css/bootstrap.min.css">
+      
+        <!-- jQuery library -->
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+
+<!-- Latest compiled JavaScript -->
+<script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+        <link rel="icon" type="images/x-icon" href="https://www.clipartmax.com/png/middle/10-105159_the-last-day-to-vote-in-city-school-elections-is-saturday-vote.png">
+	<title>TOURISM PORTAL</title>
+	<link rel="stylesheet" type="text/css" href="css/style.css">
+    </head>
+<body class="bgAnimObj">
+    <ul class="nav nav-tabs">
+		<li class="active"><a data-toggle="tab" href="#home">Home</a></li>
+		<li><a data-toggle="tab" href="#about">About</a></li>
+		<li><a data-toggle="tab" href="#contacts">Contacts</a></li>
+		<li><a data-toggle="tab" href="#feedback">Feedback</a></li>
+		<li><a data-toggle="tab" href="#info">Info</a></li>
+		<li><a data-toggle="tab" href="#login">Login</a></li>
+		<li><a data-toggle="tab" href="#signin">Sign in</a></li>
+	</ul>
+	<div class="tab-content">
+		<div id="home" class="tab-pane fade active in">
+			<div class="container">
+	<div class="carousel slide" id="image" data-ride="carousel" data-interval="1000">
+		<ol class="carousel-indicators">
+			<li  data-target="#image" data-slide-to="0" class="active"></li>
+			<li  data-target="#image" data-slide-to="1" ></li>
+			<li  data-target="#image" data-slide-to="2" ></li>
+			<li  data-target="#image" data-slide-to="3" ></li>
+			<li  data-target="#image" data-slide-to="4" ></li>
+            <li data-target="#image"  data-slide-to="5"></li>
+		</ol>
+		
+<div class="carousel-inner">
+	<div class="item active" >
+		<img src="images/img1.jpg">
+	</div>
+	<div class="item">
+		<img src="images/img2.jpg">
+	</div>
+	<div class="item">
+		<img src="images/img3.jpg">
+	</div>
+	<div class="item">
+		<img src="images/img4.jpg">
+	</div>
+	<div class="item">
+		<img src="images/img5.jpg">
+	</div>
+</div>
+</div>
+        <div>
+        <center><h1 class="header">INDIA TOURISM</h1></center>
+        </div>
+        <div id="ap">
+            <h3>STUNNING ANDHRA PRADESH</h3>
+            <p><b>Andhra Pradesh</b> is one of the 29 states of India. 
+                Situated in the south-east of the country,
+                 it is the seventh-largest state in India, As per the 2011 census,
+                  it is the tenth-most populous state, with 49,386,799 inhabitants. 
+                  The largest city in Andhra Pradesh is Visakhapatnam. </p>
+                <button  id="ap_btn" onclick="window.location.href = 'file:///C:/Users/Bappaditya%20Bera/Desktop/tour/ap.html';">Andhra pradesh</button>
+        </div>
+        <div id="delhi">
+                <h3>STUNNING DELHI</h3>
+                <p> <b>Delhi</b> is the capital of India.It is a very stuunning city.Very clorfull City</p>
+                <button  id="delhi_btn" onclick="window.location.href = 'file:///C:/Users/Bappaditya%20Bera/Desktop/tour/delhi.html';">Delhi</button>
+        </div>
+        <div id="goa">
+                <h3>CHARMING GOA</h3>
+            <p><b>Goa</b> is famous for it's charmming
+                sea beach .so many people come hare to enjoy life
+
+            </p>
+                <button  id="goa_btn" onclick="window.location.href = 'file:///C:/Users/Bappaditya%20Bera/Desktop/tour/goa.html';">Goa</button>
+        </div>
+        <div id="ladhkh">
+                <h3>SILENT BEAUTY LADHKH</h3>
+                <p><b>Ladhkh</b> is the famous for it's valley and stunning BEAUTY
+                    .very
+                </p>
+                    <button  id="ladhkh_btn" onclick="window.location.href = 'file:///C:/Users/Bappaditya%20Bera/Desktop/tour/ladhkh.html';">Ladhkh</button>
+
+        </div>
+        <p class="mega">4<span class="boom">0</span>4<div class="bola">
+</div></p>
+<p class="mini">That's an error.</p>
+<script type="text/javascript">
+var $container = $('.bola');
+var renderer = new THREE.WebGLRenderer({antialias: true});
+var camera = new THREE.PerspectiveCamera(80,1,0.1,10000);
+var scene = new THREE.Scene();
+
+scene.add(camera);
+renderer.setSize(300,300);
+$container.append(renderer.domElement);
+
+///////////////////////////////////////////////
+
+// Camera
+camera.position.z = 200;
+
+// Material
+var pinkMat = new THREE.MeshPhongMaterial({
+  color      :  new THREE.Color("rgb(226,35,213)"),
+  emissive   :  new THREE.Color("rgb(0,0,0)"),
+  specular   :  new THREE.Color("rgb(255,155,255)"),
+  shininess  :  100,
+  shading    :  THREE.FlatShading,
+  transparent: 1,
+  opacity    : 1
+});
+
+var L1 = new THREE.PointLight( 0xffffff, 1);
+L1.position.z = 100;
+L1.position.y = 100;
+L1.position.x = 100;
+scene.add(L1);
+
+var L2 = new THREE.PointLight( 0xffffff, 0.8);
+L2.position.z = 200;
+L2.position.y = 400;
+L2.position.x = -100;
+scene.add(L2);
+
+// IcoSphere -> THREE.IcosahedronGeometry(80, 1) 1-4
+var Ico = new THREE.Mesh(new THREE.IcosahedronGeometry(75,1), pinkMat);
+Ico.rotation.z = 0.5;
+scene.add(Ico);
+
+function update(){
+   Ico.rotation.x+=2/100;
+   Ico.rotation.y+=2/100;
+}
+
+// Render
+function render() {
+  requestAnimationFrame(render);			
+  renderer.render(scene, camera);	
+  update();
+}
+
+render();
+</script>
+    </body>
+    <script type="text/javascript">
+	$(document).ready(function() {
+    $('#example').DataTable( {
+        dom: 'Bfrtip',
+        buttons: [
+            'copy', 'csv', 'excel', 'pdf', 'print'
+        ]
+    } );
+} );
+
+</script>
+<script src="https://code.jquery.com/jquery-3.3.1.js"></script>
+<script src="https://cdn.datatables.net/1.10.20/js/jquery.dataTables.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/dataTables.buttons.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.flash.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/jszip/3.1.3/jszip.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/pdfmake.min.js"></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/pdfmake/0.1.53/vfs_fonts.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.html5.min.js"></script>
+<script src="https://cdn.datatables.net/buttons/1.6.1/js/buttons.print.min.js"></script>
+    </html>
